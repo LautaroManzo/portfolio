@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "cv": "node cv/build-cv.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

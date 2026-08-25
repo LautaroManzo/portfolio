@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Lautaro Joaquín Manzo Turchetto — CV</title>
+<style>
+  @page { size: A4; margin: 12mm 12mm; }
+
+  * { box-sizing: border-box; }
+
+  /* Solo para verlo en pantalla: simula la hoja A4 con sus márgenes.
+     Al imprimir manda @page y este bloque se ignora. */
+  @media screen {
+    html { background: #e5e5e5; padding: 16px 0; }
+    body {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 12mm;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .25);
+    }
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #000;
+  }
+
+  /* ---------- Encabezado ---------- */
+  header { text-align: center; margin-bottom: 14px; }
+  h1 {
+    margin: 0;
+    font-size: 19pt;
+    font-weight: bold;
+    letter-spacing: .2px;
+  }
+  .rol { margin: 3px 0 5px; font-size: 11.5pt; }
+  .contacto { font-size: 8.5pt; line-height: 1.45; }
+
+  /* ---------- Secciones ---------- */
+  h2 {
+    margin: 13px 0 6px;
+    padding-bottom: 2px;
+    font-size: 10.5pt;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #808080;
+  }
+
+  p { margin: 0; }
+  .perfil { text-align: justify; }
+
+  ul { margin: 0; padding-left: 17px; }
+  li { margin-bottom: 1.5px; }
+
+  /* ---------- Entradas con fecha a la derecha ---------- */
+  .entrada { margin-bottom: 9px; }
+  .entrada:last-child { margin-bottom: 0; }
+  .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .titulo { font-weight: bold; }
+  .fecha { white-space: nowrap; }
+  .subtitulo { font-style: italic; margin-bottom: 2px; }
+
+  /* ---------- Proyectos ---------- */
+  .stack { font-weight: normal; }
+  .proyecto .descripcion { text-align: justify; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Lautaro Joaquín Manzo Turchetto</h1>
+  <p class="rol">Desarrollador .NET</p>
+  <p class="contacto">
+    Mar del Plata, Argentina | +54 9 223 616-3518 | lau_manzo12@hotmail.com<br>
+    linkedin.com/in/lautaro-manzo | github.com/LautaroManzo
+  </p>
+</header>
+
+<h2>Perfil profesional</h2>
+<p class="perfil">
+  Desarrollador .NET trabajando desde 2022 en aplicaciones web con C#, ASP.NET MVC y
+  Entity Framework. En mi tiempo libre desarrollo proyectos propios con React y Next.js,
+  que es donde pruebo tecnologías nuevas.
+</p>
+
+<h2>Habilidades técnicas</h2>
+<ul>
+  <li><strong>Lenguajes:</strong> C#, JavaScript, SQL, HTML5, CSS3</li>
+  <li><strong>Backend:</strong> .NET, ASP.NET, ASP.NET MVC, Entity Framework</li>
+  <li><strong>Frontend:</strong> React, Next.js, Razor, jQuery, Kendo UI, Tailwind CSS</li>
+  <li><strong>Bases de datos:</strong> Oracle, SQL Server, PostgreSQL, Supabase</li>
+  <li><strong>Herramientas:</strong> Git, Azure DevOps, XML, JSON, revisión de código, pruebas funcionales</li>
+</ul>
+
+<h2>Experiencia laboral</h2>
+
+<div class="entrada">
+  <div class="fila">
+    <span class="titulo">EMMSA IT Services</span>
+    <span class="fecha">Febrero 2023 - Presente</span>
+  </div>
+  <p class="subtitulo">Desarrollador .NET</p>
+  <ul>
+    <li>Desarrollo y mantengo aplicaciones para clientes de la empresa utilizando .NET y C#.</li>
+    <li>Consumo APIs REST con manejo de datos en XML y JSON, e implemento la generación de reportes.</li>
+    <li>Construyo interfaces web con Razor, ASP.NET MVC, jQuery y Kendo UI.</li>
+    <li>Reviso código y ejecuto pruebas funcionales sobre los pull requests del equipo en Azure DevOps.</li>
+  </ul>
+</div>
+
+<div class="entrada">
+  <div class="fila">
+    <span class="titulo">EMMSA IT Services</span>
+    <span class="fecha">Septiembre 2022 - Febrero 2023</span>
+  </div>
+  <p class="subtitulo">Pasante de Desarrollo de Software</p>
+  <ul>
+    <li>Completé una capacitación intensiva en C#, ASP.NET, Entity Framework y SQL Server.</li>
+  </ul>
+</div>
+
+<h2>Proyectos propios</h2>
+
+<div class="entrada proyecto">
+  <div class="fila">
+    <span class="titulo">Te lo resumo <span class="stack">— .NET, React, Gemini, Vercel</span></span>
+    <span class="fecha">2026</span>
+  </div>
+  <p class="descripcion">
+    Resumidor de archivos PDF, enlaces y videos de YouTube, con un modo "Plan de estudio" que
+    genera mapa conceptual y preguntas. Implementé la transcripción de YouTube y la integración
+    con Gemini.
+  </p>
+</div>
+
+<div class="entrada proyecto">
+  <div class="fila">
+    <span class="titulo">Dólar info hoy <span class="stack">— React, Next.js, n8n, Supabase, Gemini</span></span>
+    <span class="fecha">2025</span>
+  </div>
+  <p class="descripcion">
+    Sitio de cotizaciones del dólar en tiempo real, con histórico y calculadora. Automaticé con n8n
+    un flujo que obtiene noticias, las resume con Gemini y las guarda en Supabase. Un bot de Telegram
+    envía las cotizaciones del día.
+  </p>
+</div>
+
+<div class="entrada proyecto">
+  <div class="fila">
+    <span class="titulo">Adiviná la palabra <span class="stack">— .NET, Razor, PostgreSQL, Docker</span></span>
+    <span class="fecha">2024</span>
+  </div>
+  <p class="descripcion">
+    Juego web de adivinanza de palabras con modos propios, desarrollado en .NET y desplegado con Docker.
+  </p>
+</div>
+
+<h2>Educación</h2>
+
+<div class="entrada">
+  <div class="fila">
+    <span class="titulo">UTN - Universidad Tecnológica Nacional</span>
+    <span class="fecha">2021 - 2023</span>
+  </div>
+  <p>Técnico Universitario en Programación (graduado)</p>
+</div>
+
+<div class="entrada">
+  <div class="fila">
+    <span class="titulo">UTN - Facultad Regional Buenos Aires</span>
+    <span class="fecha">Octubre 2020 - Diciembre 2020</span>
+  </div>
+  <p>Curso de Desarrollo Web: HTML5, CSS3 y JavaScript</p>
+</div>
+
+<div class="entrada">
+  <div class="fila">
+    <span class="titulo">Escuela de Educación Secundaria Técnica N.º 3</span>
+    <span class="fecha">2013 - 2019</span>
+  </div>
+  <p>Técnico en Automotores</p>
+</div>
+
+<h2>Idiomas</h2>
+<ul>
+  <li><strong>Español:</strong> nativo</li>
+  <li><strong>Inglés:</strong> nivel básico, en formación continua</li>
+</ul>
+
+</body>
+</html>

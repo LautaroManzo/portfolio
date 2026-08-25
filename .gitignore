@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+.vite
+
+# Config local de herramientas (Claude Code / Impeccable)
+.claude
+.impeccable
 
 # Editor directories and files
 .vscode/*
